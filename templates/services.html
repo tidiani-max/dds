@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- Hero Section -->
+    <section class="relative">
+        <img alt="Équipements miniers modernes en action" class="w-full h-96 object-cover" height="600" src="{% static 'images/im33.jpg'%}" width="1920"/>
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4">
+            <h1 class="text-white text-4xl md:text-6xl font-bold">Nos Services</h1>
+            <p class="text-white text-lg md:text-2xl mt-4">Des solutions complètes pour l'industrie minière</p>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold mb-6">Ce Que Nous Offrons</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full md:w-1/4 p-4">
+                    <i class="fas fa-hard-hat text-6xl text-yellow-500"></i>
+                    <h3 class="text-xl font-semibold mt-4">Exploration</h3>
+                    <p class="mt-2">Des services complets pour identifier et évaluer les ressources minérales.</p>
+                </div>
+                <div class="w-full md:w-1/4 p-4">
+                    <i class="fas fa-truck-loading text-6xl text-yellow-500"></i>
+                    <h3 class="text-xl font-semibold mt-4">Extraction</h3>
+                    <p class="mt-2">Des processus efficaces pour maximiser la récupération des ressources tout en minimisant l'impact environnemental.</p>
+                </div>
+                <div class="w-full md:w-1/4 p-4">
+                    <i class="fas fa-recycle text-6xl text-yellow-500"></i>
+                    <h3 class="text-xl font-semibold mt-4">Traitement</h3>
+                    <p class="mt-2">Des techniques avancées pour garantir la meilleure qualité des matériaux extraits.</p>
+                </div>
+                <div class="w-full md:w-1/4 p-4">
+                    <i class="fas fa-leaf text-6xl text-yellow-500"></i>
+                    <h3 class="text-xl font-semibold mt-4">Réhabilitation</h3>
+                    <p class="mt-2">Des pratiques durables pour restaurer les terres exploitées à leur état naturel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Detailed Services Section -->
+    <section class="py-12">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold mb-6">Services en Détail</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                    <img alt="Géologues effectuant une étude dans une zone minière" class="w-full h-48 object-cover rounded" height="200" src="{% static 'images/im38.jpg'%}" width="300"/>
+                    <h3 class="text-xl font-semibold mt-4">Études Géologiques</h3>
+                    <p class="mt-2">Des études géologiques approfondies pour évaluer les gisements minéraux et planifier les stratégies d'extraction.</p>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                    <img alt="Machines lourdes extrayant des minerais sur un site minier" class="w-full h-48 object-cover rounded" height="200" src="{% static 'images/im17.jpeg'%}" width="300"/>
+                    <h3 class="text-xl font-semibold mt-4">Opérations Minières</h3>
+                    <p class="mt-2">Des opérations minières efficaces et sécurisées utilisant des équipements et des techniques de pointe.</p>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                    <img alt="Usine de traitement avec des machines avancées" class="w-full h-48 object-cover rounded" height="200" src="{% static 'images/im21.jpg'%}" width="300"/>
+                    <h3 class="text-xl font-semibold mt-4">Traitement des Minéraux</h3>
+                    <p class="mt-2">Des techniques avancées pour extraire et purifier les minéraux efficacement.</p>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                    <img alt="Terre réhabilitée avec une nouvelle végétation" class="w-full h-48 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/2fJPDwoCrlwTayEKBY6umPbmJRhakTrsqKHfKxnUE86cluCUA.jpg" width="300"/>
+                    <h3 class="text-xl font-semibold mt-4">Réhabilitation des Terres</h3>
+                    <p class="mt-2">Restaurer les terres exploitées à leur état naturel grâce à des pratiques de réhabilitation durables.</p>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                    <img alt="Ingénieurs discutant d'un projet minier" class="w-full h-48 object-cover rounded" height="200" src="{% static 'images/im20.jpg'%}" width="300"/>
+                    <h3 class="text-xl font-semibold mt-4">Gestion de Projet</h3>
+                    <p class="mt-2">Un service complet de gestion de projet pour garantir une réalisation réussie et dans les délais.</p>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                    <img alt="Équipements de surveillance environnementale dans une zone minière" class="w-full h-48 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/2fJPDwoCrlwTayEKBY6umPbmJRhakTrsqKHfKxnUE86cluCUA.jpg" width="300"/>
+                    <h3 class="text-xl font-semibold mt-4">Surveillance Environnementale</h3>
+                    <p class="mt-2">Une surveillance environnementale continue pour garantir la conformité aux réglementations et minimiser l'impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+{% endblock %}

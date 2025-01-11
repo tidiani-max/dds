@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>{% block title %}Société Miniere{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+
+</head>
+<body class="font-roboto">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 w-full fixed top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="text-white text-2xl font-bold" href="#">DDS Mining</a>
+            <ul class="hidden md:flex space-x-4">
+                <li><a class="text-white" href="{% url 'home' %}">Accueil</a></li>
+                <li><a class="text-white" href="{% url 'about' %}">A Propos De Nous</a></li>
+                <li><a class="text-white" href="{% url 'service' %}">Services</a></li>
+                <li><a class="text-white" href="{% url 'project' %}">Projects</a></li>
+                <li><a class="text-white" href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="flex flex-col space-y-4 mt-4">
+                <li><a class="text-white" href="{% url 'home' %}">Accueil</a></li>
+                <li><a class="text-white" href="{% url 'about' %}">A Propos De Nous</a></li>
+                <li><a class="text-white" href="{% url 'service' %}">Services</a></li>
+                <li><a class="text-white" href="{% url 'project' %}">Projects</a></li>
+                <li><a class="text-white" href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto text-center text-white">
+            <a href="https://tidianiwebsite-0e096ffe780d.herokuapp.com">
+                <p>© 2025 Design by Diawara Software Company.</p>
+            </a>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a class="text-white" href="https://www.tiktok.com/@dramane.sanogo36?_t=ZM-8sw1IpTHEes&_r=1"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
