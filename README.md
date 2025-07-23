@@ -49,5 +49,5 @@ python manage.py runserver
 Cheick Tidiani Diawara
 GitHub: @tidiani-max
 
-📄 License
-This project was created for demo and client showcase purposes under the Diawara Digital & Software initiative. Contact us for reuse or custom mining website development.
+License: 
+This project was created for our  client   under the Diawara Digital & Software initiative. Contact us for reuse or custom mining website development.
